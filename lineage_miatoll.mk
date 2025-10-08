@@ -30,3 +30,12 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="miatoll_global-user 12 SKQ1.211019.001 V14.0.3.0.SJZMIXM release-keys" \
     BuildFingerprint=Redmi/miatoll_global/miatoll:12/RKQ1.211019.001/V14.0.3.0.SJZMIXM:user/release-keys
+
+export TARGET_PREBUILT_LAWNCHAIR_LAUNCHER=true
+
+# GMS core build flags (CORE GApps)
+export WITH_GMS=true
+export TARGET_USES_PICO_GAPPS=true
+
+# Optional: disable Pixel Launcher explicitly
+export PRODUCT_PACKAGES_REMOVE="NexusLauncherRelease"
