@@ -32,23 +32,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/miatoll_global/miatoll:12/RKQ1.211019.001/V14.0.3.0.SJZMIXM:user/release-keys
 
 
-# =========================================================
-# === RisingOS build flags
-# =========================================================
-
-# Maintainer info (optional)
-
-RISING_MAINTAINER := AbdoAhmedElbanaa
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingMaintainer="$(RISING_MAINTAINER)" \
+    RisingMaintainer="AbdoAhmedElbanaa" \
     RisingChipset="Snapdragon 720G"
 
-# Enable Lawnchair Launcher (disable Pixel Launcher)
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-PRODUCT_PACKAGES_REMOVE += NexusLauncherRelease
-
-# Enable Core GApps (GMS) build
-WITH_GMS := true
-TARGET_USES_PICO_GAPPS := true
+WITH_GMS := false
 
